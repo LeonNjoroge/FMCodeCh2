@@ -1,0 +1,101 @@
+h1 {
+    font-family: Poppins;
+    color:white;
+    font-weight: 600;
+}
+
+p {
+    font-family: Open Sans;
+    color:white;
+    font-weight:400;
+}
+
+body{
+    background-image: url("images/bg-desktop.svg");
+    background-repeat: none;
+    background-color: hsl(257, 40%, 49%);
+    padding:20px 40px;
+    
+}
+
+.logo{
+    margin-bottom: 30px;
+    height: 50px;
+}
+.illustration{
+    
+    max-width: 85%;
+    margin:10px
+
+}
+.text-area{
+    margin:10px;
+
+}
+
+.container{
+    display: flex;
+    
+   
+    
+}
+.childcontainer{
+    flex:1;
+    display: inline-block;
+    
+}
+
+button{
+    background-color: white;
+    color: hsl(300, 69%, 71%);
+    padding: 10px;
+    margin:10px;
+    border-radius: 20px;
+    width: 9em;
+    border: none;
+    
+}
+button:active{
+    background-color:hsl(300, 69%, 71%) ;
+    
+    color: white;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    max-width: 4%;
+    padding-left: 80%;
+    
+    
+}
+.icons img{
+    margin-left: 20px;
+    
+    
+}
+
+
+
+@media screen and (max-width:600px) {
+    body{
+        background-image: url("images/bg-mobile.svg");
+    }
+    .container{
+        flex-direction: column;
+    }
+    .icons{
+        max-width: 10%;
+        padding-left: 40%;
+        
+        
+        
+    }
+    .icons img{
+        margin-left: 10px;
+        
+        
+    }
+    
+    
+}
